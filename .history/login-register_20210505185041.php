@@ -119,20 +119,20 @@
                 </div>
                 <!-- End Login Register Content -->
             </div>
-        </div>
+        </div><br>
         <!-- End Login Register Area -->
         <!-- Start Footer Area -->
-        <!-- <footer class="htc__foooter__area gray-bg">
+        <footer class="htc__foooter__area gray-bg">
             <div class="container">
                 <div class="row">
                     <div class="footer__container clearfix">
-                    <!-- <?php require("include/footer/footer.php"); ?> -->
-                    <!-- </div> -->
-                <!-- </div> --> -->
+                    <?php require("include/footer/footer.php"); ?>
+                    </div>
+                </div>
                 <!-- Start Copyright Area -->
-                <!-- <?php require("include/footer/copyright.php"); ?> -->
+                <?php require("include/footer/copyright.php"); ?>
                 <!-- End Copyright Area -->
-            <!-- </div> -->
+            </div>
         </footer>
         <!-- End Footer Area -->
     </div>

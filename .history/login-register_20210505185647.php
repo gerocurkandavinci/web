@@ -119,7 +119,7 @@
                 </div>
                 <!-- End Login Register Content -->
             </div>
-        </div>
+        </div><br>
         <!-- End Login Register Area -->
         <!-- Start Footer Area -->
         <!-- <footer class="htc__foooter__area gray-bg">
@@ -132,7 +132,7 @@
                 <!-- Start Copyright Area -->
                 <!-- <?php require("include/footer/copyright.php"); ?> -->
                 <!-- End Copyright Area -->
-            <!-- </div> -->
+            </div>
         </footer>
         <!-- End Footer Area -->
     </div>

@@ -132,7 +132,7 @@
                 <!-- Start Copyright Area -->
                 <!-- <?php require("include/footer/copyright.php"); ?> -->
                 <!-- End Copyright Area -->
-            <!-- </div> -->
+            </div>
         </footer>
         <!-- End Footer Area -->
     </div>

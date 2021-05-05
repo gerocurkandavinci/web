@@ -642,7 +642,7 @@
                                                 <li></li>
                                             </ul>
                                             <div class="blog__btn">
-                                                <a class="read__more__btn" href="blog-details.php"></a>
+                                                <a class="read__more__btn" href="blog-details.php">Leer mas</a>
                                             </div>
                                         </div>
                                     </div>
@@ -667,13 +667,13 @@
                                     </div>
                                     <div class="blog__hover__info">
                                         <div class="blog__hover__action">
-                                            <p class="blog__des"><a href="blog-details.php"></a></p>
+                                            <p class="blog__des"><a href="blog-details.php">Lorem ipsum dolor sit consectetu.</a></p>
                                             <ul class="bl__meta">
-                                                <li><a href="#"></a></li>
-                                                <li></li>
+                                                <li>By :<a href="#">Admin</a></li>
+                                                <li>Product</li>
                                             </ul>
                                             <div class="blog__btn">
-                                                <a class="read__more__btn" href="blog-details.php"></a>
+                                                <a class="read__more__btn" href="blog-details.php">Leer mas .. </a>
                                             </div>
                                         </div>
                                     </div>

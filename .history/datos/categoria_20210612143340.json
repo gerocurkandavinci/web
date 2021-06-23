@@ -1,0 +1,7 @@
+{
+    "1": { "id": 1, "nombre": "Parrilla", "activa": true },
+    "2": { "id": 2, "nombre": "Milanesas", "activa": true },
+    "3": { "id": 3, "nombre": "Gourmet", "activa": true },
+    "4": { "id": 4, "nombre": "Bifes", "activa": true },
+    "5": { "id": 5, "nombre": "Achuras", "activa": true }
+}

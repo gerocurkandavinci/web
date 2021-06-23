@@ -51,9 +51,11 @@ if(isset($_GET['del'])){
               <i class="fas fa-times"></i>
             </button>
           </div>
-          <button style="padding-right:20px;margin-left:20px; align: center;margin-top:-6px;" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div style="float;" >
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Filtra por categoria
-          </button>             
+          </button> 
+          </div>            
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="float:left;list-inline;"> 
                   <?php
                     $categorias = businessObtenerCategorias();
@@ -86,33 +88,21 @@ if(isset($_GET['del'])){
                     </tr>
                   </thead>
                   <tbody>
-
-                  <?php
-                  $productos = businessObtenerProductos();	
-                  krsort($productos);
-                  foreach($productos as $prod){   
-                   
-                      $print = true;
-
-                      if(!empty($_GET['id']) AND $print)
-                      {
-                          if($prod['categoria'] != $_GET['id']) $print = FALSE;
-                      }
-
-                      if($print){
-                      ?>
-                      <tr>
-                           <td><?php echo $prod['id'] ?></td>
+                    <?php foreach(businessObtenerProductos() as $prod){ ?>
+                        <tr>
+                            <td><?php echo $prod['id'] ?></td>
                             <td><?php echo $prod['nombre'] ?></td>
                             <td><?php echo $categorias[$prod['categoria']]['nombre'] ?></td>
                             <td><?php echo $marcas[$prod['marca']]['nombre'] ?></td>
                             <td><?php echo $prod['precio'] ?></td>
                             <td><?php echo $prod['activo']?'SI':'NO' ?></td>
+                            <td>
+                            <a href="productosForm.php?edit=<?php echo $prod['id']?>"> <i class="fas fa-th"></i></a>
+                            <a href="productosListado.php?del=<?php echo $prod['id']?>"><i class="fas fa-trash"></i></a>
+                            </td>
                         </tr>
-                      <?php  
-                      }  
-                    }
-                  ?>      
+                    <?php } ?>
+                    
                   </tbody>
                 </table>
               </div>

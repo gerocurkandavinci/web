@@ -89,7 +89,7 @@ if(isset($_GET['del'])){
 
                   <?php
                   $productos = businessObtenerProductos();	
-                  // krsort($productos);
+                  krsort($productos);
                   foreach($productos as $prod){   
                    
                       $print = true;
@@ -108,10 +108,6 @@ if(isset($_GET['del'])){
                             <td><?php echo $marcas[$prod['marca']]['nombre'] ?></td>
                             <td><?php echo $prod['precio'] ?></td>
                             <td><?php echo $prod['activo']?'SI':'NO' ?></td>
-                            <td>
-                            <a href="productosForm.php?edit=<?php echo $prod['id']?>"> <i class="fas fa-th"></i></a>
-                            <a href="productosListado.php?del=<?php echo $prod['id']?>"><i class="fas fa-trash"></i></a>
-                            <td>
                         </tr>
                       <?php  
                       }  

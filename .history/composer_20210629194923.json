@@ -1,0 +1,10 @@
+{
+    "name": "fbonnin/shop-cart",
+    "authors": [{
+        "name": "Geronimo Curkan",
+        "email": "comercial@frigorificofirst.com"
+    }],
+    "require": {
+        "swiftmailer/swiftmailer": "^6.2"
+    }
+}

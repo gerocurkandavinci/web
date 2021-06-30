@@ -1,0 +1,10 @@
+{
+    "name": "gcurkan/web",
+    "authors": [{
+        "name": "Geronimo Curkan",
+        "email": "comercial@frigorificofirst.com"
+    }],
+    "require": {
+        "swiftmailer/swiftmailer": "^5.4"
+    }
+}
